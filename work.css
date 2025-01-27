@@ -1,0 +1,409 @@
+@font-face {
+  font-family: cartoonistic;
+  src: url(Comicartoon-Regular.ttf);
+}
+
+@font-face {
+  font-family: futura;
+  src: url(Futura-Bold.ttf);
+}
+
+@font-face {
+  font-family: newfont;
+  src: url(pxiEyp8kv8JHgFVrJJfecnFHGPc.ttf);
+}
+
+@font-face {
+  font-family: canopee;
+  src: url(616fd1dd00cf6c70f978fc69_Canopee.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#page1 {
+  height: 100vh;
+  width: 100%;
+  background-color: #f3f3f3;
+  padding: 0.5vw 1vw;
+
+  position: relative;
+}
+
+#page2 {
+  font-family: Arial, sans-serif;
+  background-color: #f3f3f3;
+  padding: 20px;
+  min-height: 130vh;
+  width: 100%;
+
+}
+
+#page2 .hero {
+  text-align: center;
+  background-color: white;
+  padding: 50px 20px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  z-index: 9;
+}
+
+#page2 .hero h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+  font-family: canopee;
+  font-weight: 300;
+}
+
+#page2 .hero p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 30px;
+  font-style: italic;
+  font-family: newfont;
+}
+
+#page2 .hero button {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#page2 .hero button:hover {
+  background-color: #333;
+}
+
+#page2 .section {
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+#page2 .section h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+  font-family: canopee;
+  font-weight: 300;
+}
+
+#page2 .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+#page2 .card {
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  text-align: center;
+}
+
+#page2 .card h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+  font-family: canopee;
+  font-weight: 300;
+}
+
+#page2 .card p {
+  color: #555;
+  font-size: 1rem;
+  font-style: italic;
+  font-family: newfont;
+}
+
+#page2 .cta {
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 40px 20px;
+  border-radius: 16px;
+}
+
+#page2 .cta h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-family: canopee;
+  font-weight: 300;
+}
+
+#page2 .cta p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  font-style: italic;
+  font-family: newfont;
+}
+
+#page2 .cta button {
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#page2 .cta button:hover {
+  background-color: #ddd;
+}
+
+
+nav {
+  height: 80px;
+  width: 100%;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 100;
+}
+
+nav a:nth-child(3) {
+  display: none;
+}
+
+nav img {
+  height: 50%;
+}
+
+#nav-part2 {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+
+#nav-part2 h4 {
+  padding: 7px 20px;
+  margin-right: 10px;
+  border: 1.5px solid rgb(0, 0, 0);
+  border-radius: 50px;
+  font-family: canopee;
+  font-weight: 700;
+  font-size: 22px;
+  transition: all ease 0.4s;
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+  position: relative;
+  letter-spacing: 1.5px;
+  color: #000;
+  z-index: 0;
+}
+
+#nav-part2 h4::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  border-radius: 50%;
+  bottom: -100%;
+  background-color: #000;
+  transition: all ease 0.4s;
+}
+
+#nav-part2 h4:hover::after {
+  bottom: 0;
+  border-radius: 0;
+}
+
+#nav-part2 h4 a {
+  text-decoration: none;
+  color: #000;
+  position: relative;
+  z-index: 9;
+}
+
+#nav-part2 h4:hover a {
+  color: #fff;
+
+}
+
+#cont1 {
+  height: 70vh;
+  width: 100%;
+  /* background-color: aliceblue; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#cont1 h1 {
+  font-size: 20vw;
+  font-family: canopee;
+  font-weight: 300;
+  z-index: 9;
+
+}
+
+.gui1 {
+  height: 50vw;
+  width: 90vw;
+  border-radius: 50%;
+  background-color: #fb2d04;
+  top: -10%;
+  left: 50%;
+  position: absolute;
+  filter: blur(20px);
+  animation-name: gui1;
+  animation-duration: 4s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+
+}
+
+.gui2 {
+  height: 50vw;
+  width: 90vw;
+  border-radius: 50%;
+  background-color: #fb2d04;
+  top: -10%;
+  left: 30%;
+  position: absolute;
+  filter: blur(20px);
+  animation-name: gui2;
+  animation-duration: 4s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+
+}
+
+@keyframes gui1 {
+  from {
+    filter: blur(20px);
+    transform: translate(10%, -10%) skew(0);
+  }
+
+  to {
+    filter: blur(30px);
+    transform: translate(-10%, 10%) skew(-60deg);
+  }
+
+}
+
+@keyframes gui2 {
+  from {
+    filter: blur(20px);
+    transform: translate(30%, -10%) skew(0);
+  }
+
+  to {
+    filter: blur(50px);
+    transform: translate(-10%, 10%) skew(-60deg);
+  }
+
+}
+
+.full-scr {
+  height: 100vh;
+  width: 100%;
+  background-color: #0000009e;
+  position: fixed;
+  z-index: 99;
+  top: -100%;
+  transition: all ease 0.3s;
+  backdrop-filter: blur(15px);
+}
+
+.full-scr #full-div1 {
+  height: 50%;
+  width: 100%;
+  background-color: #f6f6f6;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+@media (max-width:600px) {
+  #page1 {
+    height: 70vh;
+    width: 100%;
+    background-color: #f3f3f3;
+    padding: 0.5vw 1vw;
+    position: relative;
+  }
+
+  nav {
+    height: 80px;
+    background-color: #f6f6f6;
+    padding: 0 5vw;
+
+  }
+
+  nav img {
+    height: 9vw;
+    transition: all ease-out 0.2s;
+  }
+
+  #nav-part2 {
+    display: none;
+  }
+
+  nav a:nth-child(3) {
+    display: block;
+    padding: 2vw 5vw;
+    border: 1px solid black;
+    border-radius: 50px;
+    font-size: 9vw;
+    font-family: canopee;
+    font-weight: 400;
+    /* margin-right: 13vw; */
+    text-decoration: none;
+    color: #000;
+  }
+
+  .gui1 {
+    height: 50vw;
+    width: 90vw;
+    border-radius: 50%;
+    background-color: #fb2d04;
+    top: 49%;
+    left: 35%;
+    position: absolute;
+    filter: blur(20px);
+    animation-name: gui1;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  
+  }
+  
+  .gui2 {
+    height: 50vw;
+    width: 90vw;
+    border-radius: 50%;
+    background-color: #fb2d04;
+    top: 41%;
+    left: 6%;
+    position: absolute;
+    filter: blur(20px);
+    animation-name: gui2;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  
+  }
+
+}
