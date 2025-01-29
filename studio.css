@@ -44,6 +44,10 @@ position: relative;
   min-height: 100vh;
 }
 
+nav a:nth-child(3) {
+  display: none;
+}
+
 #page2 .hero {
   text-align: center;
   background-color: white;
