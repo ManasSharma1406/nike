@@ -135,6 +135,11 @@ nav img {
     height: 50%;
 }
 
+nav a:nth-child(3) {
+  display: none;
+}
+
+
 #nav-part2 {
     display: flex;
     align-items: center;
